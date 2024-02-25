@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ Quiz App</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+</head>
+
+<body class="bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 flex justify-center items-center h-screen">
+    <div class="container mx-auto p-8 bg-white rounded-lg shadow-lg">
+        <h1 class="text-4xl font-bold mb-8 text-center animate__animated animate__bounceInDown">Comic choice quetsion
+        </h1>
+
+        <div class="flex justify-between mb-4">
+            <div id="loadingMessage"
+                class="hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gray-900 text-white p-4 rounded-lg shadow-lg z-10">
+                Please wait for the next question...
+            </div>
+        </div>
+
+        <div id="quiz" class="space-y-8"></div>
+
+        <button id="submitBtn"
+            class="bg-blue-500 hover:bg-blue-700 text-white px-6 py-3 rounded-lg mt-8 block mx-auto animate__animated animate__bounceIn">Submit</button>
+
+        <button id="loadingBtn"
+            class="hidden bg-gray-500 text-white px-6 py-3 rounded-lg mt-8 block mx-auto animate__animated animate__bounceIn">Loading...</button>
+
+        <div id="overlay" class="hidden fixed inset-0 bg-gray-900 bg-opacity-75 z-20 flex justify-center items-center">
+            <div id="result" class="bg-white p-8 rounded-lg">
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
